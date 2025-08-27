@@ -25,3 +25,5 @@ data_postagem DATETIME NOT NULL,
 PRIMARY KEY(id_post),
 FOREIGN KEY(id_usuario) REFERENCES usuario(id_usuario)
 );
+
+SELECT * FROM post;
