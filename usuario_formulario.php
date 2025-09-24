@@ -40,21 +40,21 @@
                         <h2>Usuário</h2>
                         <form method="post" action="core/usuario_repositorio.php">
                             <input type="hidden" name="acao"
-                            value="<?php echo empty($id) ? 'insert' : 'update'?>">
+                                value="<?php echo empty($id) ? 'insert' : 'update'?>">
                             <input type="hidden" name="id"
-                            value="<?php echo $entidade['id'] ?? ''?>">
-                            <div class="from-group">
-                                <label for="nome">Nome</label>
-                                <input class="form-control" type="text"
+                                value="<?php echo $entidade['id'] ?? ''?>">
+                                <div class="from-group">
+                            <label for="nome">Nome</label>
+                             <input class="form-control" type="text"
                                 require="required" id="nome" name="nome"
                                 value="<?php echo $entidade['nome'] ?? '' ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-mail</label>
-                                <input class="form-control"type="text"
+                                </div>
+                                <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input class="form-control"type="text"
                                 require="required" id="email" name="email"
                                 value="<?php echo $entidade['email'] ?? '' ?>">
-                            </div>
+                                </div>
                             <?php if(!isset($_SESSION['login'])): ?>
                                 <div class="form-group">
                                     <label for="senha">Senha</label>
