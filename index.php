@@ -9,7 +9,8 @@
         <div class="row">
             <div class="col-md-12">
                 <?php 
-                    include 'includes/topo.php'; 
+                    include 'includes/topo.php';
+                    date_default_timezone_set('America/Sao_Paulo');
                 ?>
             </div>
         </div>

@@ -27,3 +27,6 @@ CREATE TABLE post (
 
 SELECT * FROM usuario;
 SELECT * FROM post;
+
+update usuario set ativo = '1' where id =1;
+update usuario set adm = '1' where id =1;
